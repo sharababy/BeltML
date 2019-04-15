@@ -1,9 +1,9 @@
 import numpy as np 
 
 
-data0 = np.genfromtxt('tseries_ideal_7_5.csv', delimiter=',')
-data1 = np.genfromtxt('tseries_misaligned_7_5.csv', delimiter=',')
-data2 = np.genfromtxt('tseries_undertension_7_5.csv', delimiter=',')
+data0 = np.genfromtxt('tseries_2_ideal_7_5.csv', delimiter=',')
+data1 = np.genfromtxt('tseries_2_overtension_7_5.csv', delimiter=',')
+data2 = np.genfromtxt('tseries_2_undertension_7_5.csv', delimiter=',')
 
 
 # adding target values to predict
@@ -17,5 +17,4 @@ dataset = np.concatenate((data0_wt,data1_wt,data2_wt),axis=0)
 
 print(dataset.shape)
 
-
-np.savetxt("tseries_all_7_5_t.csv",dataset,delimiter=',', fmt='%f',)
+np.savetxt("tseries_2_all_7_5_t.csv",dataset,delimiter=',', fmt='%f',)

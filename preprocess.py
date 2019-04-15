@@ -1,7 +1,7 @@
 import numpy as np 
 
 # read raw data from csv file
-data = np.genfromtxt('IDEALtrainingDATA10_04.csv', delimiter=',')
+data = np.genfromtxt('OvertensionedTrainingData13-04.csv', delimiter=',')
 
 # may need editing per file
 # subset of each row to take as input
@@ -59,6 +59,6 @@ for x in range(l + int(l/set_size)*overlap_size ):
 print("Timeseries shape:",timeseries.shape)
 
 # save the timeseries data as a csv file, (without header)
-np.savetxt("tseries_ideal_7_5.csv",timeseries,delimiter=',', fmt='%f',)
+np.savetxt("tseries_2_overtension_7_5.csv",timeseries,delimiter=',', fmt='%f',)
 
 
